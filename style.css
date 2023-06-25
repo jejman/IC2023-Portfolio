@@ -9,18 +9,18 @@
 
     font-family:"poppins",sans-serif;
 }
-
 :root{
-    --bg--color: #f55164;
-    --second-bg-color: #d1c4e9 ;
-    --text-color:#333333;
-    --main-color:#ff9900 ;
+    --bg--color:#081b29;
+    --second-bg-color:#112e42;
+    --text-color:white;
+    --main-color:darkblue;
 
 
 
 
 
 }
+
 
 
 html{
@@ -117,7 +117,6 @@ section{
       -webkit-text-stroke: .7px var(--main-color);
       padding-top: 8px;
   }
-  
   
   .home-content p{
       font-size: 1.3rem;
@@ -327,3 +326,95 @@ section{
    .title{
     padding-bottom: 8px;
    }
+
+   .Education{
+       display: flex;
+       justify-content:left;
+       align-items: left;
+       flex-direction: column;
+       min-height: auto;
+       padding-bottom: 5rem;
+   }
+
+  .Education .education-row{
+       display: flex;
+       flex-wrap: wrap;
+       gap: 5rem;
+
+   }
+
+
+   .education-row .education-column{
+    flex: 1 1 40rem;
+
+   }
+
+
+   .education-column .title{
+     font-size: 2.5rem;
+     margin: 0 0 1.5rem 2rem;
+    }
+
+     .experience-column .title{
+        font-size: 2.5rem;
+        margin: 0 0 1.5rem 2rem;
+     }
+  
+     .education-column .education-box{
+        border-left: .2rem solid var(--main-color);
+     }
+
+     .experience-column .education-box{
+        border-left: .2rem solid var(--main-color);
+
+      }
+/* 
+      .education-box .education-content{
+        padding-left: 2rem;
+        position: relative;
+
+
+     }
+   */
+     .education-content{
+        padding-left: 2rem;
+     } 
+
+
+     .education-content .content{
+        position: relative;
+        padding: 1.5rem;
+        border: 2px solid var(--main-color);
+        margin-bottom: 2rem;
+     } 
+ 
+
+     .education-content .content .year{
+        font-size: 1rem;
+        color: var(--main-color);
+        padding-bottom: .5rem;
+     } 
+
+     .education-content .content .year .i{
+        padding-right: .5rem;
+
+     }
+
+
+     .education-content .content h3{
+        font-size: 1rem;
+     }
+
+
+     .education-box .education-content::before{
+         content: "";
+         position: absolute;
+         top: 0;
+         width: 2rem;
+     }
+
+     .education-content .content{
+        position: relative;
+        padding: 1.5rem;
+        border: .2rem;
+     }
