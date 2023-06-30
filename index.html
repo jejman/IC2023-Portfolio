@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <link rel="stylesheet" href="style.css">
 
@@ -15,22 +16,26 @@
 
 
     <header class="header">
-
+   
         <!-- <img src="images/2.png" class="logo"> -->
 
 
         <a href="#" class="logo">Jeje.</a>
-        <div class="bx bx-menu" id="menu"></div>
+        <!-- <div class="bx bx-menu bx-x" id="menu"></div> -->
 
         <nav class="navbar">
             <a href="#home" class="home">Home</a>
             <a href="#About">About Me</a>
             <a href="#Education">Education</a>
-            <a href="#Skills">Skills</a>
+            <a href="#skills">Skills</a>
             <a href="#Projects">Projects</a>
-            <a href="#COtactMe">Contact Me</a>
-
+            <a href="#contact">Contact Me</a>
         </nav>
+        <div class="navMenu">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+        </div>
     </header>
 
 
@@ -210,6 +215,38 @@
             </div>
            </div>
        </section>
+
+       <!-- CONTACT SECTION -->
+
+         <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me!</span></h2>
+
+            <form action="https://formsubmit.co/abiolajeje2@gmail.com" method="POST">
+                <div class="input-box">
+                    <div class="input-field">
+                        <input type="text" name="name" placeholder="Full Name" required>
+                        <span class="focus"></span>
+                    </div>
+                    <div class="input-field">
+                        <input type="tel" name="Phone" placeholder="Mobile address" required>
+                        <span class="focus"></span>
+                    </div>
+                
+                <div class="input-field" id="input-field">
+                    <input type="text" name="email" placeholder="Email address" required>
+                    <span class="focus"></span>
+                </div>
+
+              
+
+                </div>
+        </div>
+                <div class="btn-box btns" id="buttons">
+                    <button type="submit" class="btn"> Submit</button>
+                </div>
+
+            </form>
+         </section>
 
 </body>
 <script src="portfoliojs.js"></script>
