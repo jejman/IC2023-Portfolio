@@ -6,22 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style2.css">
+
 </head>
-<link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+
 
 <body>
 
    <!-- i used box icons to create the logo for my icons -->
-   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-
-    <header class="header">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+ <header class="header"> 
    
-        <!-- <img src="images/2.png" class="logo"> -->
+         <!-- <img src="images/2.png" class="logo"> -->
 
-
-        <a href="#" class="logo">Jeje.</a>
-        <!-- <div class="bx bx-menu bx-x" id="menu"></div> -->
+        
+        <a href="#" class="logo">Jeje. <span class="animate" style="--i:1;" ></span></a>  
+        <div class="bx bx-menu bx-x" id="menu"><span class="animate" style="--i:2;" ></span>
+        </div>  
 
         <nav class="navbar">
             <a href="#home" class="home">Home</a>
@@ -30,45 +32,65 @@
             <a href="#skills">Skills</a>
             <a href="#Projects">Projects</a>
             <a href="#contact">Contact Me</a>
+            <span class="active-nav"></span>
+            <span class="animate" style="--i:2;" ></span>
         </nav>
         <div class="navMenu">
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
               </a>
-        </div>
-    </header>
+        </div> 
+     </header>  
+
+
+
+
+    
 
 
      <!-- Home section -->
 
-       <section class="home" id="home">
+       <section class="home show-animate" id="home">
         <div class="home-content">
-            <h1>Hi, I'm <span> Ayomide Jeje</span></h1>
+            <h1>Hi, I'm <span>Ayomide Jeje</span> </h1>
             <div class="animate-text">
 
 
                 <h3>Full Stack Developer</h3>
+                <span class="animate" style="--i:3;"></span>
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                  Ex doloribus quidem ea ab officiis in quia voluptatum, quasi odit 
-                natus tempora libero magni odio molestias sint magnam aut esse? Quod.</p>
+                natus tempora libero magni odio molestias sint magnam aut esse? Quod.
+                <span class="animate" style="--i:4;"></span>
+
+            </p>
                 <div class="btn-box">
                     <a href="#" class="btn">Hire Me</a>
                     <a href="#" class="btn"> Resume</a>
+                    <span class="animate" style="--i:5;"></span>
+
+
                 </div>
         </div>
         <div class="home-sci">
             <a href=""><i class='bx bxl-twitter' ></i></a>
             <a href=""><i class='bx bxl-linkedin' ></i></a>
             <a href=""><i class='bx bxl-instagram' ></i></a>
+            <span class="animate" style="--i:6;"></span>
+
         </div>
+        <div class="home-imgHover"></div>
+        <span class="animate" style="--i:7;"></span>
+
        </section>
 
        <!-- about section -->
 
 
        <section class="About" id="About">
-        <h2 class="heading">About<span> ME </span></h2>
+        <h2 class="heading">About<span> ME </span>
+        </h2>
 
         <div class="about-img">
             <img src="images/Capture.PNG" alt="">
@@ -250,4 +272,5 @@
 
 </body>
 <script src="portfoliojs.js"></script>
+<!-- <script src="portolio2.js"></script> -->
 </html>

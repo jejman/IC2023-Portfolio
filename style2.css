@@ -45,19 +45,25 @@ body{
     align-items: center;
     z-index: 100;
     transition: .3s;
+    
+    
+        
+
         /* overflow: hidden; */
         /* background-color: #333; */
-        position: relative;      
+        position: relative;
+       
+        
 }
-
-
 
 /* .header .navbar {
     display: none;
   } */
 
   .header.sticky{
-    background: var(--second-bg-color)
+    background: var(--second-bg-color);
+    position: fixed;
+    top: 0%;
   }
 
   .header a.icon {
@@ -65,7 +71,7 @@ body{
     display: block;
     /* position: absolute; */
     right: 0;
-     size: 500px;
+    size: 50000px;
     /* top: 0; */
   }
 
@@ -74,7 +80,11 @@ body{
     color: var(--text-color);
     font-weight: 600;
     margin-right: 2rem;
+    position: relative;
+}
 
+.navbar{
+   position: relative;
 }
 
 .navbar a{
@@ -96,6 +106,7 @@ body{
 
 
 #menu{
+    position: relative;
     font-size: 2rem;
     color: var(--text-color);
     cursor:pointer;
@@ -107,7 +118,7 @@ section{
 
 }
 #home{
-    display: flex;
+    /* display: flex; */
     align-items: center;
     padding: 0 9%;
    
@@ -119,6 +130,8 @@ section{
   
   .home-content h1{
       font-size: 4rem;
+      position: relative;
+      display: inline-block;
       font-weight: 500;
       line-height: 1;
       padding-top: 100px;
@@ -139,10 +152,79 @@ section{
   .home-content .animate-text h3{
       font-size: 3.2rem;
       font-weight: 700;
-      color: transparent;
+      /* color: transparent; */
       -webkit-text-stroke: .7px var(--main-color);
       padding-top: 8px;
+      /* background-image: linear-gradient(var(--main-color),var(--main-color));
+      background-repeat: no-repeat;
+       -webkit-background-clip:text;
+        -webkit-background-clip: text;
+       background-clip:text;
+      background-position: 0 0;
+      animation: homeBgText 6s linear infinite;
+      animation-delay: 2s; */
+      color: blue;
   }
+
+  .home-content .animate-text h3 ::before{
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 0;
+     height: 100%;
+     border-right: 2px solid var(--main-color);
+     z-index: -1;        
+
+
+} 
+/* Add this code to your CSS file */
+
+.animate-text {
+  display: inline-block;
+}
+
+.animate-text h3 {
+  overflow: hidden;
+  white-space: nowrap;
+   animation: typing 3s infinite;
+   /* steps(25, end), blinking-cursor 0.75s step-end infinite;  */
+  font-size: 3.2rem;
+  font-weight: 700;
+  /* color: transparent; */
+}
+
+/* @keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+} */
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes blinking-cursor {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
   
   .home-content p{
       font-size: 1.3rem;
@@ -241,6 +323,7 @@ section{
         z-index: 1;
         overflow: hidden;
         transition: .5s;
+        margin-top: 8000rem;
     }
 
     .home-sci a:hover{
@@ -670,13 +753,36 @@ section{
 
 
 
+
+    .animate{
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--bg--color);
+      z-index: 98;
+    }
+
+
+       .animate.home-img{
+        width: 80%;
+       }
+    .logo .animate,
+    .navbar .animate,
+    #menu .animate,
+    .home.show-animate .animate{
+      animation: showRight 1s ease forwards;
+      animation-delay: calc(.3s * var(--i));
+    }
+
     @media (max-width :1200px){
         html{
             font-size: 55%;
         }
     }
 
-    @media (max-width :991px){
+     @media (max-width :991px){
       .header{
         padding: 2rem 4%;
       }
@@ -701,7 +807,7 @@ section{
       #menu-icon{
            display: block;
       }
-      .navbar{
+       .navbar{
         position: absolute;
         top: 100%;
         left: 0;
@@ -709,18 +815,43 @@ section{
         padding: 1rem 4%;
         background: var(--bg--color);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-      }
+      } 
 
       .navbar a{
         display: block;
         font-size: 2rem;
         margin: 3rem 0 ;
       }
-    }
+    } 
+
 
     @media (max-width: 520px){
         html{
             font-size: 50%;
         }
+    } 
+
+
+
+    /* animation for letters */
+
+    @keyframes homeBgText{
+        0%,
+        10%,
+        100%{
+            background-position: -33rem 0;
+        }
+
+        65%,
+        85%{
+            background-position: -33rem 0;
+        }
     }
 
+
+
+    @keyframes showRight{
+      100%{
+        width: 0;
+      }
+    }
