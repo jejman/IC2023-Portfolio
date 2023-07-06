@@ -3,11 +3,7 @@ let menuicon=document.querySelector("#menu")
 let navbar=document.querySelector(".navbar")
 
 
-menuicon.onclick=()=>{
-    menuicon.classList.toggle("bx-x");
-     navbar.classList.toggle("home");
 
-}
 
 // let sections=document.querySelectorAll("section")
 // let navlinks=document.querySelectorAll("header nav a")
@@ -64,11 +60,55 @@ window.onscroll=()=>{
     header.classList.toggle("sticky",window.scrollY > 100)
 }
 
-function myFunction() {
-    var x = document.querySelector(".navbar");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-  }
+// function myFunction() {
+//     var x = document.querySelector(".navbar");
+//     if (x.style.display === "block") {
+//       x.style.display = "none";
+//     } else {
+//       x.style.display = "block";
+//     }
+//   }
+
+// function myFunction() {
+//     var x = document.querySelector(".navbar");
+//     if (x.className === "navbar") {
+//       x.className += " responsive";
+//     } else {
+//       x.className = "navbar";
+//     }
+//   }
+
+
+
+function toggleMenu() {
+    var navbar = document.querySelector(".navbar");
+    navbar.classList.toggle("show");
+}
+
+// Add the following code to hide the navbar by default
+// document.addEventListener("DOMContentLoaded", function() {
+//     var navbar = document.querySelector(".navbar");
+//     navbar.classList.add("hide");
+// });
+
+
+// function jeje() {
+//     console.log("test")
+//     var x = document.querySelector(".navbar");
+//     if (x.className === "navbar") {
+//       x.className += " responsive";
+//     } else {
+//       x.className = "navbar";
+//     }
+//   }
+
+
+  document.querySelector('.hamburger').addEventListener('click', function () {
+    document.querySelectorAll('.navbar a').forEach(function(jeje){
+        console.log(jeje)
+            jeje.classList.toggle("active")
+    })
+    
+    // .classList.toggle('active');
+  });
+

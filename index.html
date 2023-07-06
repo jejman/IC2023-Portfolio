@@ -17,29 +17,39 @@
    <!-- i used box icons to create the logo for my icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
  <header class="header"> 
-   
+    
          <!-- <img src="images/2.png" class="logo"> -->
-
+ 
         
         <a href="#" class="logo">Jeje. <span class="animate" style="--i:1;" ></span></a>  
-        <div class="bx bx-menu bx-x" id="menu"><span class="animate" style="--i:2;" ></span>
-        </div>  
 
         <nav class="navbar">
-            <a href="#home" class="home">Home</a>
-            <a href="#About">About Me</a>
-            <a href="#Education">Education</a>
-            <a href="#skills">Skills</a>
-            <a href="#Projects">Projects</a>
-            <a href="#contact">Contact Me</a>
+            <a href="#home" class="active">Home</a>
+            <a href="#About" class="active">About Me</a>
+            <a href="#Education" class="active">Education</a>
+            <a href="#skills"class="active" >Skills</a>
+            <a href="#Projects" class="active">Projects</a>
+            <a href="#contact" class="active">Contact Me</a>
+<!--           
+            <a href="javascript:void(0)" class="icon" onclick="jeje()">
+                <i class="fa fa-bars"></i>
+          
+            </a> -->
+            <div class="hamburger">
+                <i class="fa fa-bars"></i>
+              </div>
             <span class="active-nav"></span>
             <span class="animate" style="--i:2;" ></span>
         </nav>
-        <div class="navMenu">
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <!-- <div class="navMenu">
+             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
-              </a>
-        </div> 
+              </a> 
+              <a href="javascript:void(0);" class="icon" onclick="toggleMenu()" id="menuIcon">
+    <i class="fa fa-bars"></i>
+</a>
+
+        </div>  -->
      </header>  
 
 
@@ -66,17 +76,17 @@
 
             </p>
                 <div class="btn-box">
-                    <a href="#" class="btn">Hire Me</a>
-                    <a href="#" class="btn"> Resume</a>
+                    <a href="https://www.linkedin.com/in/ayomide-jeje-7a4995266/" class="btn" target="_blank">Hire Me</a>
+                    <a href="https://docs.google.com/document/d/1DYllszNz3npyaCw4v9lRcT1R9lI9S2CyXL3CBfLYBe0/edit" class="btn" target="_blank"> Resume</a>
                     <span class="animate" style="--i:5;"></span>
 
 
                 </div>
         </div>
         <div class="home-sci">
-            <a href=""><i class='bx bxl-twitter' ></i></a>
-            <a href=""><i class='bx bxl-linkedin' ></i></a>
-            <a href=""><i class='bx bxl-instagram' ></i></a>
+            <a href="https://twitter.com/home" target="_blank"><i class='bx bxl-twitter' ></i></a>
+            <a href="https://www.linkedin.com/in/ayomide-jeje-7a4995266/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram' ></i></a>
             <span class="animate" style="--i:6;"></span>
 
         </div>
@@ -105,7 +115,7 @@
                 Assumenda quod, sunt animi mollitia eum obcaecati et temporibus eligendi. Doloremque.</P>
 
                 <div class="btn-box btns" id="btn">
-                    <a href="#" class="btn" >Read More</a>
+                    <a href="https://docs.google.com/document/d/1DYllszNz3npyaCw4v9lRcT1R9lI9S2CyXL3CBfLYBe0/edit" class="btn" target="_blank">Read More</a>
                 </div>
 
         </div>
@@ -238,6 +248,43 @@
            </div>
        </section>
 
+       <section class="projects" id="Projects">
+        <h2 class="heading">My Projects</h2>
+        <div class="project-list">
+            <div class="project-item">
+                <img src="https://library.fresnostate.edu/sites/all/assets/img/tech/calculator.jpg" alt="Project 1">
+                <h3>Calculator Project</h3>
+                <p>Description of Project 1</p>
+            </div>
+            <div class="project-item">
+                <img src="https://imageio.forbes.com/specials-images/dam/imageserve/1092571024/960x0.jpg?height=474&width=711&fit=bounds" alt="Project 2">
+                <h3>To do list</h3>
+                <p>Description of Project 2</p>
+            </div>
+            <div class="project-item">
+                <img src="https://www.zdnet.com/a/img/resize/07619bef1e5f8d1c34be25db8d991529bd873ffe/2022/05/18/830e6364-cc17-4e4b-ba22-db7866c57dec/carrot-weather-best-weather-app.jpg?auto=webp&fit=crop&height=900&width=1200" alt="Project 3">
+                <h3>Weather project</h3>
+                <p>Description of Project 3</p>
+            </div>
+            <div class="project-item">
+                <img src="https://play-lh.googleusercontent.com/zPxLgj5nvl20ahJV7aFC6S5mD8kii5CEEDj25j1P9CYAfXL9sdDuO-8eES0r4DhJHrU" alt="Project 4">
+                <h3>Tic tac toe project</h3>
+                <p>Description of Project 4</p>
+            </div>
+            <div class="project-item">
+                <img src="https://cms.involve.me/how-to-make-a-buzzfeed-style-personality-quiz.png" alt="Project 5">
+                <h3>Buzz Feed game Project</h3>
+                <p>Description of Project 5</p>
+            </div>
+            <div class="project-item">
+                <img src="project6.jpg" alt="Project 6">
+                <h3>Project 6</h3>
+                <p>Description of Project 6</p>
+            </div>
+        </div>
+    </section>
+
+
        <!-- CONTACT SECTION -->
 
          <section class="contact" id="contact">
@@ -245,27 +292,31 @@
 
             <form action="https://formsubmit.co/abiolajeje2@gmail.com" method="POST">
                 <div class="input-box">
-                    <div class="input-field">
-                        <input type="text" name="name" placeholder="Full Name" required>
+                    <div class="formHolder">
+                        <div class="input-field">
+                            <input type="text" name="name" placeholder="Full Name" required>
+                            <span class="focus"></span>
+                        </div>
+                        <div class="input-field">
+                            <input type="tel" name="Phone" placeholder="Mobile address" required>
+                            <span class="focus"></span>
+                        </div>
+                    
+                    <div class="input-field" id="input-field">
+                        <input type="text" name="email" placeholder="Email address" required>
                         <span class="focus"></span>
                     </div>
-                    <div class="input-field">
-                        <input type="tel" name="Phone" placeholder="Mobile address" required>
+                         
+                    <div class="input-field" id="input-field">
+                        <input type="text" name="text"   placeholder="Message" required>
                         <span class="focus"></span>
                     </div>
-                
-                <div class="input-field" id="input-field">
-                    <input type="text" name="email" placeholder="Email address" required>
-                    <span class="focus"></span>
-                </div>
-
-              
-
-                </div>
+                    <div class="btn-box btns" id="buttons">
+                        <button type="submit" class="btn"> Submit</button>
+                    </div>
+                    </div>
         </div>
-                <div class="btn-box btns" id="buttons">
-                    <button type="submit" class="btn"> Submit</button>
-                </div>
+    
 
             </form>
          </section>
