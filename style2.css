@@ -328,10 +328,10 @@ section{
         width: 40px;
         height: 40px;
         background:transparent;
-        border: .2rem solid var(--main-color);
+        border: .2rem solid white;
         border-radius: 50%;
         font-size: 20px;
-        color: var(--main-color);
+        color: white;
         z-index: 1;
         overflow: hidden;
         transition: .5s;
